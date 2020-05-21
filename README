@@ -1,0 +1,48 @@
+fahyph.tex
+
+Unicode hyphenation patterns for Persian (this file is a part of XePersian package).
+
+Created:         November 19th, 2008
+First release:   November 19th, 2008
+Second release: April 4th, 2013
+Revised:         April 4th, 2013
+Version:         0.002
+
+Created by Persian TeX Group.
+persian-tex@tug.org
+
+These patterns were designed for use with XeTeX, a Unicode variant of TeX. After being
+compiled into a format, these patterns can be activated with the command:
+
+	\language=\persian
+
+INSTRUCTIONS FOR ACTIVATING PERSIAN HYPHENATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ASSUMPTION: You have installed TeXLive 2012.
+
+	1. Place fahyph.tex and loadhyph-fa.tex at
+		 texmf-local/tex/generic/hyphen/persian 
+
+	2. Go to texmf-var/tex/generic/config/ directory and open language.dat file.
+
+	3. Open language.dat file, go to line 83 and change the line to
+		 farsi loadhyph-fa.tex
+
+	4. Generate the required formats by running
+		 fmtutil --byfmt xelatex
+
+
+
+If you want to report any bugs or typos and corrections in the documentation,
+or ask for any new features, or suggest any improvements, or ask any questions
+about the package, then please do not send any direct emails to us; we will not 
+answer any direct emails. Instead please use the issue tracker:
+  <https://github.com/persian-tex/fahyph/issues>
+In doing so, please always explain your issue well enough, always include
+a minimal working examples showing the issue, and always choose the appropriate
+label for your query (i.e. if you are reporting any bugs, choose `bug' label).
+
+These hyphenation patterns are under the LaTeX Project Public License.
+
+
